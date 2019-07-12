@@ -1,0 +1,14 @@
+service: tile38-lambda-layer
+frameworkVersion: ">=1.34.0 <2.0.0"
+provider:
+  name: aws
+layers:
+  tile38:
+    path: layer
+resources:
+  Outputs:
+    Tile38LayerExport:
+        Value:
+          Ref: Tile38LambdaLayer
+        Export:
+          Name: Tile38LambdaLayer

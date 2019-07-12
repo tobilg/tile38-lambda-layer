@@ -1,0 +1,5 @@
+# Serverless temp directory
+.serverless/
+
+# Layer contents
+layer/
